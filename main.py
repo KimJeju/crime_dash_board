@@ -1,4 +1,4 @@
-import uvicorn
+import gunicorn
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
@@ -34,6 +34,6 @@ def home():
     return {'app' : 'main'}
 
 if __name__ == "__main__":
-    uvicorn.run("main:app", host='0.0.0.0', port=8892, reload=True)
+    gunicorn.run("main:app", host='0.0.0.0', port=8892, reload=True)
 
 
