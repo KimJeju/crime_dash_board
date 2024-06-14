@@ -10,4 +10,4 @@ RUN pip install -r requirements.txt
 
 EXPOSE 8892
 
-CMD  python main.py
+CMD  gunicorn --bind 0:8000 main:app --worker-class uvicorn.workers.UvicornWorker
