@@ -1,32 +1,32 @@
 import gunicorn
 from fastapi import FastAPI
-from fastapi.middleware.cors import CORSMiddleware
+# from fastapi.middleware.cors import CORSMiddleware
 
 # 컨트롤 라우터 선언
 from branch_crime_app import branch_crime_router 
 
-#cors url
-origins = [
-    CORSMiddleware,
-    "http://localhost",
-    "http://localhost/",
-    "http://localhost:5173",
-    "http://127.0.0.1/",
+# #cors url
+# origins = [
+#     CORSMiddleware,
+#     "http://localhost",
+#     "http://localhost/",
+#     "http://localhost:5173",
+#     "http://127.0.0.1/",
 
-]
+# ]
 
 
 app = FastAPI()
 app.include_router(branch_crime_router.router)
 
 #cors settings
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=origins,
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
+# app.add_middleware(
+#     CORSMiddleware,
+#     allow_origins=origins,
+#     allow_credentials=True,
+#     allow_methods=["*"],
+#     allow_headers=["*"],
+# )
 
 
 @app.get('/')
