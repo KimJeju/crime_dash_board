@@ -12,7 +12,8 @@ origins = [
     "http://localhost/",
     "http://localhost:5173",
     "http://127.0.0.1/",
-    "https://web-crime-dash-board-client-deploy-lxe5h085f14d72b3.sel5.cloudtype.app/"
+    "https://web-crime-dash-board-client-deploy-lxe5h085f14d72b3.sel5.cloudtype.app/",
+    "http://175.121.69.41:5173/"
 ]
 
 
