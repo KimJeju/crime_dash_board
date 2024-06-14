@@ -1,17 +1,11 @@
-FROM node:12-alpine
+FROM python:3.11
 
-WORKDIR /app
-COPY *.json ./
-COPY *.js ./
 
-COPY ./bin ./bin/
-COPY ./public ./public/
-COPY ./routes ./routes/
-COPY ./views ./views/
+COPY . /src
+WORKDIR /src
 
-RUN chown -Rf node:node .
+RUN pip install -r requirements.txt
 
-USER node
-EXPOSE 3000
-RUN npm ci --only=production
-ENTRYPOINT [ "npm", "start" ]
+EXPOSE 8892
+
+CMD  python main.py
