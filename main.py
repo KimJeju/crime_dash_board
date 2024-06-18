@@ -12,7 +12,9 @@ origins = [
     "https://crime-dash-board-client-deploy:80",
     "https://crime-dash-board-client-deploy:80/",
     "http://175.121.69.41:5173/",
-    "https://www.crimedash.kr/"
+    "https://www.crimedash.kr/",
+    "https://www.crimedash.kr//"
+    "https://www.crimedash.kr"
 ]
 
 
