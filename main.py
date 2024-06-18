@@ -8,12 +8,7 @@ from branch_crime_app import branch_crime_router
 #cors url
 origins = [
     CORSMiddleware,
-    "http://localhost",
-    "http://localhost/",
     "http://localhost:5173",
-    "http://127.0.0.1/",
-    "https://web-crime-dash-board-client-deploy-lxe5h085f14d72b3.sel5.cloudtype.app/",
-    "https://web-crime-dash-board-client-deploy-lxe5h085f14d72b3.sel5.cloudtype.app",
     "https://crime-dash-board-client-deploy:80",
     "https://crime-dash-board-client-deploy:80/",
     "http://175.121.69.41:5173/",
