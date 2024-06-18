@@ -16,7 +16,8 @@ origins = [
     "https://web-crime-dash-board-client-deploy-lxe5h085f14d72b3.sel5.cloudtype.app",
     "https://crime-dash-board-client-deploy:80",
     "https://crime-dash-board-client-deploy:80/",
-    "http://175.121.69.41:5173/"
+    "http://175.121.69.41:5173/",
+    "https://www.crimedash.kr/"
 ]
 
 
