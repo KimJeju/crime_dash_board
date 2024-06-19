@@ -1,11 +1,5 @@
 # 국내범죄통계 대시보드 서버
 
-<p align="center">
-  <br>
-  <img src="./images/common/logo-sample.jpeg">
-  <br>
-</p>
-
 목차
 
 ## 프로젝트 소개
