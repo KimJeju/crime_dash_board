@@ -9,10 +9,6 @@
 ■ 국내 범죄동향 및 통계를 시각화 자료로 표현하기 위한 Fast Api 서버 입니다.
 </p>
 
-<p align="center">
-GIF Images
-</p>
-
 <br>
 
 ## 기술 스택
