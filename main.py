@@ -17,8 +17,46 @@ origins = [
     "https://www.crimedash.kr/",
 ]
 
+## docs 설명란
+description = """
+안녕하세요, 해당 페이지는 국내 범죄통계 대시보드 Api 문서입니다.
 
-app = FastAPI()
+## 제공내용
+현재는 **2023년 1~4 분기** ~ **2024년 1분기** 경찰청 분기별 범죄발생 통계에 대한 데이터만 제공하고 있습니다 .
+향 후 지속적 업데이트 예정입니다.
+
+## API 파라미터
+
+**year** :  </br>
+&nbsp; &nbsp; ■ 2024 </br>
+&nbsp; &nbsp; ■ 2023
+
+**branch** :  
+&nbsp; &nbsp; ■ 2024년 : 1, <br/>
+&nbsp; &nbsp; ■ 2023년 : 1,2,3,4  <br/>
+
+**category** :  
+&nbsp; &nbsp; ■ average  <br/>
+&nbsp; &nbsp; ■ main <br/>
+&nbsp; &nbsp; ■ sub <br/>
+
+**subject** :  
+&nbsp; &nbsp; ■ 발생건수 <br/>
+&nbsp; &nbsp; ■ 검거인원 <br/>
+&nbsp; &nbsp; ■ 발생대비 검거건수 <br/>
+&nbsp; &nbsp; ■ 검거인원 <br/>
+&nbsp; &nbsp; ■ 법인체 <br/>
+
+
+
+"""
+
+app = FastAPI(
+    title="국내 범죄통계 API",
+    description=description,
+    version="0.0.1",
+)
+
 app.include_router(branch_crime_router.router)
 
 #cors settings
