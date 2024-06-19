@@ -13,39 +13,25 @@
 
 ## 기술 스택
 
-| JavaScript | TypeScript |  React   |  Node   |
+| Python | FastAPI |  Docker   |  Linux   |
 | :--------: | :--------: | :------: | :-----: |
-|   ![js]    |   ![ts]    | ![react] | ![node] |
-
 <br>
 
 ## 구현 기능
 
 ### 기능 1
+■ 분기별 범죄통계 자료
 
 ### 기능 2
+■ 분기별 범죄통계 자료 상세 
 
 ### 기능 3
+■ 분기별 발생추이 상세 통계
 
 ### 기능 4
+■ 주제에 따른 통계
+
 
 <br>
 
-## 배운 점 & 아쉬운 점
 
-<p align="justify">
-
-</p>
-
-<br>
-
-## 라이센스
-
-MIT &copy; [NoHack](mailto:lbjp114@gmail.com)
-
-<!-- Stack Icon Refernces -->
-
-[js]: /images/stack/javascript.svg
-[ts]: /images/stack/typescript.svg
-[react]: /images/stack/react.svg
-[node]: /images/stack/node.svg
